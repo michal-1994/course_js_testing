@@ -37,3 +37,11 @@ it("should yield a correct sum if an array of numeric string values is provided"
   );
   expect(result).toBe(expectedResult);
 });
+
+it("should yield 0 if an empty array is provided", () => {
+  const numbers = [];
+
+  const result = add(numbers);
+
+  expect(result).toBe(0);
+});
